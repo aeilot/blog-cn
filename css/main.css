@@ -1009,3 +1009,131 @@ html {
     width: calc(100% - 48px);
   }
 }
+.installation-view {
+  background: #f5f5f3;
+}
+
+.installation-view .site-header {
+  padding-top: 24px;
+}
+
+.installation-view .site-name {
+  font-size: 36px;
+}
+
+.installation-view .site-subtitle {
+  display: none;
+}
+
+.installation-view .site-nav {
+  margin-top: 8px;
+  font-size: 15px;
+}
+
+.installation-view .site-main {
+  width: min(1360px, 100% - 64px);
+}
+
+.installation-wall {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.05fr) minmax(0, 0.85fr);
+  align-items: center;
+  gap: clamp(20px, 3vw, 48px);
+  margin: clamp(48px, 8vh, 96px) auto 0;
+  color: #171717;
+}
+
+.installation-poster, .installation-verification {
+  margin: 0;
+}
+
+.installation-poster img {
+  width: 100%;
+}
+
+.installation-poster, .installation-poem {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+.installation-poem, .installation-verification {
+  padding: clamp(20px, 2.8vw, 40px);
+  background: #fff;
+}
+
+.installation-poem {
+  font-family: system-ui, "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-size: clamp(15px, 1.3vw, 19px);
+  line-height: 1.75;
+}
+
+.installation-poem h1 {
+  margin: 0 0 1em;
+  font-size: clamp(20px, 2vw, 30px);
+  line-height: 1.35;
+}
+
+.installation-poem p {
+  margin: 0 0 1em;
+}
+
+.installation-poem p:has(strong) {
+  margin-top: 1.85em;
+  font-size: 1.18em;
+}
+
+.installation-poem strong {
+  font-weight: 650;
+}
+
+.installation-poem p:last-child {
+  margin-bottom: 0;
+  font-size: 0.85em;
+}
+
+.installation-verification {
+  padding: clamp(18px, 2vw, 28px);
+  font-family: system-ui, sans-serif;
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.installation-verification-check {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #d9f0e1;
+  color: #1f4b28;
+}
+
+.installation-verification h2 {
+  margin: 0.8em 0 0.55em;
+  color: #1f4b28;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.installation-verification p {
+  margin: 0 0 0.85em;
+}
+
+.installation-verification .installation-verification-meta {
+  margin-bottom: 0;
+  color: #555;
+}
+
+@media (max-width: 960px) {
+  .installation-view .site-main {
+    width: calc(100% - 40px);
+  }
+  .installation-wall {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 470px;
+    gap: 32px;
+  }
+  .installation-poem {
+    font-size: 17px;
+  }
+}
