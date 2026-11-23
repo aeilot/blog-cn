@@ -993,3 +993,19 @@ html {
     margin-top: 42px;
   }
 }
+/* Footer follows the same responsive container as the gallery stage. */
+.gallery-view .site-footer {
+  width: min(1120px, 100% - 96px);
+  margin: 56px auto 0;
+}
+
+@media (max-width: 900px) {
+  .gallery-view .site-footer {
+    width: calc(100% - 64px);
+  }
+}
+@media (max-width: 600px) {
+  .gallery-view .site-footer {
+    width: calc(100% - 48px);
+  }
+}
